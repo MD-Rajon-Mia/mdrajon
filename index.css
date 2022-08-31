@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #29e9bc;
+  --normal: #ffffff;
+  --black: #13131a;
+  --bg: #0c1013;
+  --danger: #f75842;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  font-family: "Roboto", sans-serif;
+}
+.mmm {
+  height: 70vh;
+  width: 100%;
+}
+.navbar {
+  padding: 1% 5%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.navbar-icons {
+  color: white;
+}
+.nav-link {
+  color: white;
+  margin: 10px;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+.nav-link:hover {
+  background: #2988b9;
+  color: white;
+  transform: scale(1.1);
+}
+/* manin */
+.features {
+  margin-top: -10;
+  background-color: rgb(19, 19, 20);
+}
+#ioi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+.hello {
+  color: white;
+  font-weight: 100;
+  font-size: 40px;
+  font-family: "Courier New", Courier, monospace;
+}
+.name11 {
+  color: white;
+  margin-top: 20px;
+  font-weight: bolder;
+  font-size: 50px;
+  font: optional;
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+}
+.and {
+  color: white;
+  margin-top: 20px;
+  font-size: 40px;
+  font: optional;
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+}
+.typing {
+  color: blue;
+}
+#roted {
+  background-color: black;
+  height: 5rem;
+  width: 100%;
+  margin-top: -4rem;
+  z-index: 99;
+  transform: skewY(-2deg);
+}
+
+/* About me */
+.myName {
+  color: white;
+  font-size: 40px;
+  font-family: "Courier New", Courier, monospace;
+}
+.typing1 {
+  color: blue;
+}
+.my-cv {
+  font-weight: 100;
+  font-size: 30px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.image {
+  border: 1px solid blue;
+  border-radius: 50%;
+  width: 45%;
+  height: auto;
+}
+
+/* Service */
+
+.text1 {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  color: green;
+  padding: 5% 5%;
+  border-radius: 20px;
+}
+
+.text1:hover {
+  box-shadow: var(--primary) 0px 54px 55px, var(--danger) 0px 4px 6px, var(--primary) 0px 12px 13px, var(--danger) 0px -3px 5px;
+}
+
+.text2 {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  color: green;
+  padding: 5% 5%;
+  border-radius: 20px;
+}
+.text2:hover {
+  box-shadow: var(--primary) 0px 54px 55px, var(--danger) 0px 4px 6px, var(--primary) 0px 12px 13px, var(--danger) 0px -3px 5px;
+}
+.text-3 {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  color: green;
+  padding: 5% 5%;
+  border-radius: 20px;
+}
+
+.icons-class {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-3:hover {
+  box-shadow: var(--primary) 0px 54px 55px, var(--danger) 0px 4px 6px, var(--primary) 0px 12px 13px, var(--danger) 0px -3px 5px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid blue;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  color: blue;
+}
+.icons:hover {
+  background-color: blue;
+  color: red;
+  transition: 1.9s;
+}
+.more-text {
+  display: none;
+}
+.text.show-more .more-text {
+  display: inline;
+}
+
+.more-text1 {
+  display: none;
+}
+
+.texto.show-more1 .more-text1 {
+  display: inline;
+}
+.more-text2 {
+  display: none;
+}
+.tex.show-more1 .more-text2 {
+  display: inline;
+}
+
+/*=== Skills ===*/
+#Skills {
+  align-items: center;
+  margin: auto;
+  position: relative;
+  flex-direction: column;
+  padding: 1.6rem 1.8rem;
+  background-color: var(--black);
+  width: 70%;
+  border-radius: 0.7rem;
+}
+
+.skill-container li {
+  list-style-type: none;
+  margin: 50px 0px;
+  color: white;
+  font-weight: bolder;
+  text-transform: uppercase;
+  position: relative;
+}
+.skill-container li::before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  background-color: var(--primary);
+  width: 100%;
+  height: 25px;
+  border-radius: 1000px;
+}
+.skill-container li::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  background-color: var(--black);
+  width: 0;
+  height: 25px;
+  border-radius: 1000px;
+
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: 5;
+  animation-fill-mode: forwards;
+}
+.skill-container li.html::after {
+  animation-name: html;
+}
+
+@keyframes html {
+  to {
+    width: 90%;
+    background-color: var(--danger);
+  }
+}
+
+.skill-container li.css::after {
+  animation-name: css;
+}
+
+@keyframes css {
+  to {
+    width: 80%;
+    background-color: var(--danger);
+  }
+}
+.skill-container li.js::after {
+  animation-name: js;
+}
+
+@keyframes js {
+  to {
+    width: 70%;
+    background-color: var(--danger);
+  }
+}
+.skill-container li.bootstrap::after {
+  animation-name: bootstrap;
+}
+
+@keyframes bootstrap {
+  to {
+    width: 95%;
+    background-color: var(--danger);
+  }
+}
+
+/*=== Portfolio ===*/
+#img {
+  height: 300px;
+  width: 500px;
+}
+#img:hover {
+  transform: scale(1.1);
+}
+/*=== Faqs ===*/
+.Question {
+  margin: 2rem;
+  background-color: var(--bg);
+}
+.faq_container {
+  color: white;
+  display: grid;
+  text-align: center;
+}
+.faq {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  height: fit-content;
+  background-color: var(--primary);
+  margin-top: 20px;
+  color: var(--bg);
+  text-align: justify;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.faq h4 {
+  font-size: 1.5rem;
+  line-height: 2.23;
+}
+.faq_icons {
+  margin-top: 12px;
+  align-self: flex-start;
+  font-size: 1.3rem;
+}
+.faq p {
+  margin-top: 0.8rem;
+  display: none;
+}
+.faq.open p {
+  display: block;
+}
+
+/*=== contact ===*/
+
+.contact {
+  background-color: var(--bg);
+  gap: 50px;
+}
+
+.texx {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+}
+h6 {
+  font-size: 15px;
+  font-weight: lighter;
+}
+.permalinks a {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+}
+.icons- i {
+  color: white;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+.icons- i:hover {
+  color: var(--primary);
+}
